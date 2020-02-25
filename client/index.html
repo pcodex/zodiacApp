@@ -22,22 +22,25 @@
 </nav>
 
     <div class="container">
-		<h1>Welcome to Zodiac App </h1>
+		
 			<div class="row">
 				<div class="col-md-4">
 					<img src="/images/zodiac.jpg" class="img-responsive">
 					<hr>
 					<form>
 						<div class="form-group">
-							<input type="text" id="usrinp" class="form-control" placeholder="Type your input...">
+							<input type="text" id="user-search" class="form-control" placeholder="Type your input...">
 						</div>
 						<div class="form-group"> 
-							<button type="button" class="btn btn-danger">Find</button>
+							<button type="button" onclick="getData()" class="btn btn-danger">Find</button>
 						</div>
 					</form>
 				</div>
 				<div class="col-md-4">
-					<p>Result will display here</p>					
+					<h2 id="name"></h2>
+					<h5 id="date"></h5>
+					<img id="imgzodiac">
+					<p id="text-result"></p>					
 				</div>
 			</div>
 	</div>
